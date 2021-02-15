@@ -1,18 +1,19 @@
 import '../App.css'
 import logo from '../assets/logo.png'
-const Navbar = () => {
+import logo1 from '../assets/logo1.png'
+import {NavLink,Link} from 'react-router-dom'
+const Navbar = ({black}) => {
     return ( 
-        <nav>
+        <nav className={black ? 'pad' : null}>
             <div className="logo">
-                <img src={logo} />
+                <Link to='/'><img src={ black ? logo1 : logo } /></Link>
             </div>
             <ul>
-                <li><a className="active" href="/">Home</a></li>
-                <li><a href="/">Menu</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Shop</a></li>
-                <li><a href="/">News</a></li>
-                <li><a href="/">Contact</a></li>
+                <li><NavLink className={black ? 'red' : null} exact to="/">Home</NavLink></li>
+                <li><NavLink className={black ? 'red' : null} to="/menu">Menu</NavLink></li>
+                <li><NavLink className={black ? 'red' : null} to="/about">About Us</NavLink></li>
+                <li><NavLink className={black ? 'red' : null} to="/shop">Shop</NavLink></li>
+                <li><NavLink className={black ? 'red' : null}  to="/contact">Contact</NavLink></li>
             </ul>
         </nav>
      );

@@ -15,6 +15,13 @@ nav{
 nav ul li{
     display: inline-block;
 }
+.red{
+  color: black !important;
+  margin-right: 30px;
+}
+.pad{
+  padding:3% 5%;
+}
 nav ul li a{
   margin-right: 30px;
   color: white;
@@ -249,6 +256,152 @@ h3 span{
   text-align: center;
   margin-top: 15px;
 }
+.botnav{
+ box-shadow: 20px 10px 15px rgb(172, 172, 172);
+}
+.botnav-text{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items: center;
+}
+.botnav .botnav-text h1{
+  font-size:30px;
+  font-weight: 500;
+  padding: 3% 5%;
+}
+.botnav .botnav-text h3{
+  font-size:15px;
+  font-weight: 400;
+  padding: 3% 5%;
+}
+.botnav .botnav-text h3 span{
+  color: rgb(255, 44, 44);
+}
+.shop-container{
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  background-image: url('./assets/bg2.jpg');
+  background-size: cover;
+}
+.shop-container .shop-title{
+  text-align: center;
+}
+.shop-container .shop-title h3{
+  font-size: 2em;
+}
+.shop-container .shop-title h1{
+  font-size:2.5em;
+}
+.shop-container .shop-pizzas{
+  display:flex;
+  flex-direction:column;
+  padding: 5% 0%;
+}
+.shop-container .shop-pizzas .shop-pizza{
+  border-top: 5px dotted white;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items: center;
+}
+.shop-container .shop-pizzas .shop-pizza .shop-img img{
+  width:200px;
+}
+.pizza-card{
+  display: flex;
+  flex-direction:column;
+  width: 300px;
+  height: 500px;
+  background-color: white;
+  margin-right: 30px;
+}
+.pizza-card .pizza-text{
+  padding: 20px;
+}
+.pizza-card .pizza-text h1{
+  font-size:1.3em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.pizza-card .pizza-text p{
+  margin-bottom: 10px;
+}
+.pizza-card .pizza-text a{
+  text-decoration: none;
+  color: rgb(59, 59, 59);
+  font-weight:400;
+  font-size: 16px;
+}
+.pizza-card .pizza-card-imgbox{
+  position: relative;
+  width: 100%;
+  height:250px;
+}
+.pizza-card .pizza-card-imgbox img{
+  position: absolute;
+  top: 0;left: 0;
+  width: 100%;height: 100%;
+  object-fit: cover;
+}
+.about-container{
+  padding: 5%;
+  background-image: url('./assets/bg2.jpg');
+ background-position: center;
+ background-size: cover;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+}
+.about-container .righttext{
+  padding: 10px;
+  color: white;
+}
+.about-container .righttext h3{
+  font-size: 2em;
+  color:grey;
+}
+.about-container .righttext h1{
+  font-size:3em;
+}
+.about-container .righttext p{
+  margin-bottom: 30px;
+}
+
+
+.about-container .righttext a{
+  padding:10px 30px;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(255, 44, 44); 
+  border-radius: 25px;
+}
+.customers-container{
+  margin:50px;
+  display: flex;
+  grid-gap: 50px;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+.customers-container .box{
+  padding: 10px;
+  text-align: center;
+  width:300px;
+  box-shadow: 5px 10px 20px grey;
+  transition: transform 0.5s;
+}
+.customers-container .box:hover{
+  transform: scale(1.05);
+}
+.customers-container .box .imgbox img{
+  border-radius: 50%;
+}
+/* for phone */
 @media screen and (max-width: 500px){
   .header-page{
     height:auto ;
@@ -328,10 +481,22 @@ h3 span{
     height: auto;
   }
   nav ul li a{
-    font-size: 15px;
+    font-size: 14px;
     margin-right: 10px;
   }
+  .shop-container .shop-pizzas .shop-pizza{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+  }
+  .pizza-card{
+    margin-bottom: 20px;
+  }
 }
+
+/* for ipad */
 @media screen and (max-width: 900px){
   .header-page{
     height:auto ;
@@ -411,10 +576,22 @@ h3 span{
     height: auto;
   }
   nav ul li a{
-    font-size: 15px;
+    font-size: 14px;
     margin-right: 10px;
   }
   .footer .row .col-2{
     text-align: center;
+  }
+  .about-container{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+  }
+  .pizza-card{
+    margin-top: 20px;
+    width: 500px;
+    height: 400px;
   }
 }
