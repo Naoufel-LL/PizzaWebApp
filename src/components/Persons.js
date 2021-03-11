@@ -11,7 +11,7 @@ const Persons = ({name1,name2,name3,customer,emojis1,emojis2,emojis3,person1,per
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A deleniti nesciunt ducimus rerum eos s
                 it corrupti officia mollitia, eum libero.
             </p>
-            {customer ? <h3>⭐⭐⭐⭐⭐</h3> : null}
+            {customer ? <h3>⭐⭐⭐⭐⭐</h3> : <h3>🏆🏆🏆🏆</h3>}
             <div className="imgbox">
                 <img src={person1} alt="" />
             </div>
@@ -23,7 +23,7 @@ const Persons = ({name1,name2,name3,customer,emojis1,emojis2,emojis3,person1,per
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A deleniti nesciunt ducimus rerum eos s
                 it corrupti officia mollitia, eum libero.
             </p>
-            {customer ? <h3>⭐⭐⭐⭐⭐</h3> : null}
+            {customer ? <h3>⭐⭐⭐⭐⭐</h3> : <h3>🏆🏆🏆🏆</h3>}
             <div className="imgbox">
                 <img src={person2} alt=""/>
             </div>
@@ -35,7 +35,7 @@ const Persons = ({name1,name2,name3,customer,emojis1,emojis2,emojis3,person1,per
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A deleniti nesciunt ducimus rerum eos s
                 it corrupti officia mollitia, eum libero.
             </p>
-            {customer ? <h3>⭐⭐⭐⭐⭐</h3> : null}
+            {customer ? <h3>⭐⭐⭐⭐⭐</h3> : <h3>🏆🏆🏆🏆</h3>}
             <div className="imgbox">
                 <img src={person3} alt=""/>
             </div>

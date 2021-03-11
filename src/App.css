@@ -395,16 +395,103 @@ h3 span{
   box-shadow: 5px 10px 20px grey;
   transition: transform 0.5s;
 }
+.customers-container .box .imgbox{
+     width: 100%;
+  
+}
 .customers-container .box:hover{
   transform: scale(1.05);
 }
 .customers-container .box .imgbox img{
-  border-radius: 50%;
+  border-radius:50%;
+}
+.contacthead-container{
+  padding:5%;
+  display: flex;
+  flex-direction: row;
+}
+.contacthead-container .leftside{
+  flex-basis: 50%;
+}
+.contacthead-container .leftside h2{
+  color: gray;
+}
+.contacthead-container .leftside h1{
+  font-size:2.5em;
+}
+.contacthead-container .leftside h3{
+  font-size:1em;
+}
+.contacthead-container .mapright{
+  flex-basis: 50%;
+}
+.contacthead-container .mapright img{
+  width: 600px;
+  height: 600px;
+}
+.form{
+  width: 100%;
+  padding: 5%;
+  background-color: rgb(223, 223, 223);
+} 
+.form .form-title{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form .form-title h1{
+  font-size:2.5em;
+}
+.form .form-title h3{
+  color: grey;
+}
+.form .form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form .form-container input{
+  outline: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  width: 100%;
+  padding:10px;
+  border-radius:25px;
+  border: 1px solid grey;
+}
+.form .form-container textarea:focus,.form .form-container input:focus{
+    border: 2px solid  rgb(255, 44, 44);
+}
+
+.form .form-container textarea{
+  outline: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  height:20vh;
+  margin-bottom: 20px;
+  width: 100%;
+  padding:10px;
+  border-radius:25px;
+  border: 1px solid grey;
+}
+.form .form-container a{
+  padding:10px 30px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(255, 44, 44); 
+  border-radius: 25px;
 }
 /* for phone */
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
   .header-page{
-    height:auto ;
+    height:auto;
     
   }
   .header-page .header-container{
@@ -449,9 +536,13 @@ h3 span{
   .info-container{
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    align-items: center;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
     height: auto;
+  }
+  .info-container .box{
+    margin: 0;
   }
   .pizzas-container{
     display: flex;
@@ -494,10 +585,52 @@ h3 span{
   .pizza-card{
     margin-bottom: 20px;
   }
+  .contacthead-container{
+    padding:5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contacthead-container .mapright img{
+    width: 100%;
+    height: auto;
+  }
+  .red{
+    margin-right: 15px;
+  }
+  .nextheaderreverse .imgright{
+    flex-basis: 100% ;
+    text-align: center;
+  }
+  .nextheaderreverse .imgright img{
+    width: 350px;
+  }
+  .about-container{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  
+element.style {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-849292934726188-2;
+}
+.about-container .righttext{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.pizza-card{
+  margin: 15px 0;
+}
 }
 
 /* for ipad */
-@media screen and (max-width: 900px){
+@media screen and (min-width:601px) and (max-width: 900px){
   .header-page{
     height:auto ;
     
@@ -535,7 +668,7 @@ h3 span{
     align-items: center;
   }
   .nextheaderreverse .imgright{
-    flex-basis: 100%;
+    flex-basis: 100% ;
     text-align: center;
   }
   .nextheaderreverse.imgright img{
@@ -577,7 +710,7 @@ h3 span{
   }
   nav ul li a{
     font-size: 14px;
-    margin-right: 10px;
+    margin-right: 8px;
   }
   .footer .row .col-2{
     text-align: center;
@@ -594,4 +727,14 @@ h3 span{
     width: 500px;
     height: 400px;
   }
+  .contacthead-container{
+    padding:5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contacthead-container .mapright img{
+    width: 100%;
+    height: auto;
+  }
+  
 }
